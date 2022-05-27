@@ -16,6 +16,9 @@ int main() {
     vector<string> operators;
     vector<int> numbers;
     
+    int ncheck=0;
+    int ocheck=0;
+    
     for (int i=0;i<size;i++) {
         
         if (isdigit(input[i])) {
@@ -28,15 +31,20 @@ int main() {
                     i=i+1;
                 }
             numbers.push_back(stoi(num));
+            ncheck=1;
         }
         else if ((input[i]==*"+")||(input[i]==*"-")||(input[i]==*"*")||(input[i]==*"/")) {
             op.push_back(input[i]);
             operators.push_back(op);
             op="";
-            
+            ocheck=1;
+        }
+        if ((ocheck==0)&&(ncheck==1)) {
+            cout << "Error" <<endl;
+            return 1;
         }
     }
-    Cool yes;
+    Cool yes; 
     cout << yes.thing(operators,numbers) << endl;
     
     return 0;

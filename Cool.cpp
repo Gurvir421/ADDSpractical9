@@ -8,7 +8,7 @@ using namespace std;
 Cool::Cool() {
     
 }
-
+ 
 string Cool::thing(vector<string> operate, vector<int> number) {
     
     int size1=operate.size();

@@ -7,7 +7,7 @@ class Cool {
     Cool();
     
     std::string thing(std::vector<std::string> operate, std::vector<int> number);
-    
+     
     int calculate(std::string sign,int a,int b);
     
     int value;
