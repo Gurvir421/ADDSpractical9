@@ -1,0 +1,21 @@
+  
+     /*
+    for (int i=0;i<numbers.size();i++) {
+        cout <<numbers.at(i) << " ";
+    }
+    cout << endl;
+    
+    for (int i=0;i<operators.size();i++) {
+        cout << operators.at(i) << " ";
+    }
+      
+     cout << endl;
+    
+    vector<string> sy= {"/","+"}; 
+    vector<int> valu {2,2,2};
+     
+    Cool yes;
+    yes.thing(sy,valu);
+    
+   
+    */
