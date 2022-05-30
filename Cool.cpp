@@ -32,7 +32,12 @@ string Cool::thing(vector<string> operate, vector<int> number) {
         standard="(" + standard + ")"+operate.at(size1-j-1)+to_string(number.at(i)); 
         
     }
+    if (( operate.at(0)=="+") || (operate.at(0)=="-")) {
+        standard="("+standard+")"+"="+to_string(value);
+    }
+    else {
     standard=standard+"="+to_string(value);
+    }
     return standard;
 }
 
